@@ -90,7 +90,8 @@ func TracerProviderFromEnv(ctx context.Context, serviceName string, onErr func(e
 		// No TracerProvider was created because OTEL_TRACES_EXPORTER wasn't set, or was set to none
 		return func() {}
 	}
-	if otelTracesExporter == "jaeger" {
+	switch otelTracesExporter {
+	case "jaeger":
 		jaegerEndpoint := os.Getenv("OTEL_EXPORTER_JAEGER_ENDPOINT")
 		if jaegerEndpoint == "" {
 			onErr(errors.New("Jaeger set as OpenTelemetry trace exporter, but no Jaeger endpoint configured."))
@@ -102,7 +103,7 @@ func TracerProviderFromEnv(ctx context.Context, serviceName string, onErr func(e
 				return func() {}
 			}
 		}
-	} else if otelTracesExporter == "otlp" {
+	case "otlp":
 		otlpEndpoint := os.Getenv("OTEL_EXPORTER_OTLP_ENDPOINT")
 		if otlpEndpoint == "" {
 			onErr(errors.New("OTLP set as OpenTelemetry trace exporter, but no OTLP endpoint configured."))
@@ -114,7 +115,7 @@ func TracerProviderFromEnv(ctx context.Context, serviceName string, onErr func(e
 				return func() {}
 			}
 		}
-	} else {
+	default:
 		onErr(errors.Errorf("Unknown OTEL_TRACES_EXPORTER type: %s", otelTracesExporter))
 		return func() {}
 	}
