@@ -1,3 +1,4 @@
+// Package gotelnats provides convenience functions for opentelemetry.
 package gotelnats
 
 import (
@@ -309,7 +310,7 @@ func Publish[ReqType DERequest](ctx context.Context, conn *nats.EncodedConn, sub
 	return nil
 }
 
-// PublishRespone instruments outgoing responses with telemetry information.
+// PublishResponse instruments outgoing responses with telemetry information.
 // It is a generic function that will accept responses implementing the
 // DEResponse interface. The response should be a pointer to a concrete
 // implementation of the DEResponse interface.
