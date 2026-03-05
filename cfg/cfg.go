@@ -145,7 +145,7 @@ func Init(settings *Settings) (*koanf.Koanf, error) {
 	// This should deal with all of the environment variables, including those
 	// loaded in from the dotenv file.
 	if err = k.Load(env.Provider(envPrefix, delimiter, func(s string) string {
-		return strings.Replace(strings.ToLower(strings.TrimPrefix(s, envPrefix)), "_", delimiter, -1)
+		return strings.ReplaceAll(strings.ToLower(strings.TrimPrefix(s, envPrefix)), "_", delimiter)
 	}), nil); err != nil {
 		return nil, err
 	}
