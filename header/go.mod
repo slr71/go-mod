@@ -1,3 +1,3 @@
 module github.com/cyverse-de/go-mod/header
 
-go 1.24.2
+go 1.25
