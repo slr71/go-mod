@@ -1,3 +1,3 @@
 module github.com/cyverse-de/go-mod/subjects
 
-go 1.22
+go 1.25

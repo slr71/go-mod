@@ -1,9 +1,9 @@
 github.com/cespare/xxhash/v2 v2.3.0 h1:UL815xU9SqsFlibzuggzjXhog7bL6oX9BbNZnL2UFvs=
 github.com/cespare/xxhash/v2 v2.3.0/go.mod h1:VGX0DQ3Q6kWi7AoAeZDth3/j3BFtOZR5XLFGgcrjCOs=
-github.com/cyverse-de/p/go/header v0.0.4 h1:asY/uixi9rCqbDLq2G21CT7WJRaendBfr1z2YTuK2hk=
-github.com/cyverse-de/p/go/header v0.0.4/go.mod h1:1j79PqvJyMRmXXKyW4KbZWGQNontm0B9smsaq5t5Ct8=
-github.com/cyverse-de/p/go/svcerror v0.0.8 h1:UE06rE31kk7OcciTQlZfrJTFlC9AMTfNf6JKll41u0U=
-github.com/cyverse-de/p/go/svcerror v0.0.8/go.mod h1:0h/BngUR9cTV86LYqHMkdREFcxJuMyOJV6f3u6Un4LQ=
+github.com/cyverse-de/p/go/header v0.0.6 h1:U5lPSoutG8O3hfL1RmAE1XoNmsLw76x4wY57B1OR5Ws=
+github.com/cyverse-de/p/go/header v0.0.6/go.mod h1:m76egzcq1I94e+HsJAGQj8eaS63npJoilhSceY6B+DM=
+github.com/cyverse-de/p/go/svcerror v0.0.10 h1:oILT4Jyiop5B25i0WCo5Sm0v4TCvDWYF3EAwwzhqNCg=
+github.com/cyverse-de/p/go/svcerror v0.0.10/go.mod h1:OthNZt4p6WNShX7U+g6MrCs0s7uZTDRCWD8ts4Credk=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/go-logr/logr v1.2.2/go.mod h1:jdQByPbusPIv2/zmleS9BjJVeZ6kBagPoEUsqbVz/1A=
